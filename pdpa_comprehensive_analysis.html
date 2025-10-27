@@ -1,0 +1,2110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PDPA Act 2022 & Amendment 2024 - Comprehensive Analysis</title>
+    <style>
+        :root {
+            --primary-color: #2c3e50;
+            --secondary-color: #3498db;
+            --success-color: #27ae60;
+            --warning-color: #f39c12;
+            --danger-color: #e74c3c;
+            --light-bg: #ecf0f1;
+            --dark-bg: #34495e;
+        }
+        
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background-color: #f5f5f5;
+        }
+        
+        .container {
+            max-width: 1400px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        
+        header {
+            background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
+            color: white;
+            padding: 40px 20px;
+            text-align: center;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+        }
+        
+        header h1 {
+            font-size: 2.5em;
+            margin-bottom: 10px;
+        }
+        
+        header p {
+            font-size: 1.1em;
+            opacity: 0.9;
+        }
+        
+        .quick-ref {
+            background: white;
+            border-radius: 10px;
+            padding: 30px;
+            margin: 30px 0;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+            border-left: 5px solid var(--secondary-color);
+        }
+        
+        .quick-ref h2 {
+            color: var(--primary-color);
+            margin-bottom: 20px;
+            font-size: 1.8em;
+        }
+        
+        .quick-ref-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+            margin-top: 20px;
+        }
+        
+        .quick-ref-card {
+            background: var(--light-bg);
+            padding: 20px;
+            border-radius: 8px;
+            border-left: 4px solid var(--secondary-color);
+        }
+        
+        .quick-ref-card h3 {
+            color: var(--secondary-color);
+            margin-bottom: 10px;
+            font-size: 1.1em;
+        }
+        
+        .quick-ref-card ul {
+            list-style: none;
+            padding-left: 0;
+        }
+        
+        .quick-ref-card li {
+            padding: 5px 0;
+            border-bottom: 1px solid #ddd;
+        }
+        
+        .quick-ref-card li:last-child {
+            border-bottom: none;
+        }
+        
+        nav {
+            background: white;
+            padding: 20px;
+            margin: 20px 0;
+            border-radius: 10px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+        
+        nav h3 {
+            color: var(--primary-color);
+            margin-bottom: 15px;
+        }
+        
+        nav ul {
+            list-style: none;
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+        }
+        
+        nav a {
+            color: white;
+            background: var(--secondary-color);
+            padding: 10px 20px;
+            border-radius: 5px;
+            text-decoration: none;
+            transition: all 0.3s;
+            display: inline-block;
+        }
+        
+        nav a:hover {
+            background: var(--primary-color);
+            transform: translateY(-2px);
+            box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+        }
+        
+        .section {
+            background: white;
+            margin: 30px 0;
+            padding: 40px;
+            border-radius: 10px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+        
+        .section h2 {
+            color: var(--primary-color);
+            border-bottom: 3px solid var(--secondary-color);
+            padding-bottom: 15px;
+            margin-bottom: 25px;
+            font-size: 2em;
+        }
+        
+        .section h3 {
+            color: var(--secondary-color);
+            margin-top: 30px;
+            margin-bottom: 15px;
+            font-size: 1.5em;
+        }
+        
+        .section h4 {
+            color: var(--dark-bg);
+            margin-top: 20px;
+            margin-bottom: 10px;
+            font-size: 1.2em;
+        }
+        
+        .provision {
+            background: #f9f9f9;
+            border-left: 4px solid var(--secondary-color);
+            padding: 20px;
+            margin: 20px 0;
+            border-radius: 5px;
+        }
+        
+        .provision-title {
+            font-weight: bold;
+            color: var(--primary-color);
+            margin-bottom: 10px;
+            font-size: 1.1em;
+        }
+        
+        .new {
+            background-color: #d4edda;
+            border-left-color: var(--success-color);
+        }
+        
+        .modified {
+            background-color: #fff3cd;
+            border-left-color: var(--warning-color);
+        }
+        
+        .removed {
+            background-color: #f8d7da;
+            border-left-color: var(--danger-color);
+        }
+        
+        .badge {
+            display: inline-block;
+            padding: 4px 12px;
+            border-radius: 20px;
+            font-size: 0.85em;
+            font-weight: bold;
+            margin-left: 10px;
+        }
+        
+        .badge-new {
+            background: var(--success-color);
+            color: white;
+        }
+        
+        .badge-modified {
+            background: var(--warning-color);
+            color: white;
+        }
+        
+        .badge-removed {
+            background: var(--danger-color);
+            color: white;
+        }
+        
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 20px 0;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+        
+        th {
+            background: var(--primary-color);
+            color: white;
+            padding: 15px;
+            text-align: left;
+            font-weight: 600;
+        }
+        
+        td {
+            padding: 12px 15px;
+            border-bottom: 1px solid #ddd;
+        }
+        
+        tr:hover {
+            background-color: #f5f5f5;
+        }
+        
+        .example {
+            background: #e8f4f8;
+            border-left: 4px solid #3498db;
+            padding: 15px;
+            margin: 15px 0;
+            border-radius: 5px;
+        }
+        
+        .example-title {
+            font-weight: bold;
+            color: #2980b9;
+            margin-bottom: 8px;
+        }
+        
+        .legal-note {
+            background: #fff9e6;
+            border: 2px solid #ffd700;
+            border-radius: 8px;
+            padding: 20px;
+            margin: 20px 0;
+        }
+        
+        .legal-note strong {
+            color: #d35400;
+        }
+        
+        .glossary {
+            background: #f0f8ff;
+            padding: 30px;
+            border-radius: 10px;
+            margin: 30px 0;
+        }
+        
+        .glossary h2 {
+            color: var(--primary-color);
+            margin-bottom: 20px;
+        }
+        
+        .glossary-term {
+            margin: 15px 0;
+            padding: 15px;
+            background: white;
+            border-radius: 5px;
+            border-left: 4px solid var(--secondary-color);
+        }
+        
+        .glossary-term dt {
+            font-weight: bold;
+            color: var(--secondary-color);
+            margin-bottom: 8px;
+            font-size: 1.1em;
+        }
+        
+        .glossary-term dd {
+            color: #555;
+            padding-left: 20px;
+        }
+        
+        .section-ref {
+            color: #7f8c8d;
+            font-style: italic;
+            font-size: 0.9em;
+        }
+        
+        .important {
+            background: #ffe6e6;
+            border: 2px solid #ff6b6b;
+            padding: 15px;
+            border-radius: 5px;
+            margin: 15px 0;
+        }
+        
+        .important::before {
+            content: "⚠️ ";
+            font-size: 1.2em;
+        }
+        
+        code {
+            background: #f4f4f4;
+            padding: 2px 6px;
+            border-radius: 3px;
+            font-family: 'Courier New', monospace;
+            color: #e74c3c;
+        }
+        
+        @media print {
+            body {
+                background: white;
+            }
+            .section {
+                page-break-inside: avoid;
+                box-shadow: none;
+            }
+            nav {
+                display: none;
+            }
+        }
+        
+        @media (max-width: 768px) {
+            header h1 {
+                font-size: 1.8em;
+            }
+            .section {
+                padding: 20px;
+            }
+            nav ul {
+                flex-direction: column;
+            }
+            .quick-ref-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>📋 Personal Data Protection Act 2010 (Act 709)</h1>
+        <p>Comprehensive Analysis: Original Act 2022 & Amendment 2024</p>
+        <p style="font-size: 0.9em; margin-top: 10px;">Generated on October 27, 2025</p>
+    </header>
+    
+    <div class="container">
+
+        <div class="quick-ref">
+            <h2>📌 Quick Reference Summary</h2>
+            <p><strong>Document Overview:</strong> This analysis covers the Personal Data Protection Act 2010 (Act 709) as it stands after the 2024 Amendment (Act A1727).</p>
+            
+            <div class="quick-ref-grid">
+                <div class="quick-ref-card">
+                    <h3>Key Dates</h3>
+                    <ul>
+                        <li><strong>Original Act:</strong> June 2, 2010</li>
+                        <li><strong>Amendment:</strong> October 9, 2024</li>
+                        <li><strong>Implementation:</strong> TBA by Minister</li>
+                    </ul>
+                </div>
+                
+                <div class="quick-ref-card">
+                    <h3>Major Changes 2024</h3>
+                    <ul>
+                        <li>"Data User" → "Data Controller"</li>
+                        <li>Biometric data added</li>
+                        <li>Data portability right</li>
+                        <li>Increased penalties</li>
+                    </ul>
+                </div>
+                
+                <div class="quick-ref-card">
+                    <h3>7 Core Principles</h3>
+                    <ul>
+                        <li>1. General Principle</li>
+                        <li>2. Notice & Choice</li>
+                        <li>3. Disclosure</li>
+                        <li>4. Security</li>
+                        <li>5. Retention</li>
+                        <li>6. Data Integrity</li>
+                        <li>7. Access</li>
+                    </ul>
+                </div>
+                
+                <div class="quick-ref-card">
+                    <h3>Maximum Penalties</h3>
+                    <ul>
+                        <li><strong>Before:</strong> RM 300,000 / 2 years</li>
+                        <li><strong>After 2024:</strong> RM 1,000,000 / 3 years</li>
+                        <li>Administrative fines up to RM 500,000</li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="legal-note" style="margin-top: 20px;">
+                <strong>⚖️ Legal Disclaimer:</strong> This document provides a summary based on the Act as stated. It does NOT constitute legal advice. For specific legal guidance, please consult with qualified legal professionals specializing in Malaysian data protection law.
+            </div>
+        </div>
+
+        <nav id="navigation">
+            <h3>📑 Navigate to Section</h3>
+            <ul>
+                <li><a href="#scope">1. Scope & Applicability</a></li>
+                <li><a href="#principles">2. 7 Data Protection Principles</a></li>
+                <li><a href="#rights">3. Rights of Data Subjects</a></li>
+                <li><a href="#obligations">4. Obligations of Data Controllers</a></li>
+                <li><a href="#crossborder">5. Cross-Border Data Transfer</a></li>
+                <li><a href="#sensitive">6. Sensitive Personal Data</a></li>
+                <li><a href="#enforcement">7. Enforcement & Penalties</a></li>
+                <li><a href="#exemptions">8. Exemptions</a></li>
+                <li><a href="#glossary">📖 Glossary</a></li>
+            </ul>
+        </nav>
+
+        <!-- SECTION 1: SCOPE AND APPLICABILITY -->
+        <div class="section" id="scope">
+            <h2>1. Scope and Applicability</h2>
+            
+            <h3>Who Does the Act Apply To? <span class="section-ref">(Section 2)</span></h3>
+            
+            <div class="provision">
+                <div class="provision-title">Coverage</div>
+                <p>The Personal Data Protection Act 2010 applies to:</p>
+                <ul style="margin-left: 20px; margin-top: 10px;">
+                    <li><strong>Commercial transactions:</strong> Any person who processes or has control over or authorizes the processing of personal data in respect of commercial transactions</li>
+                    <li><strong>Federal Government:</strong> The Federal Government (subject to specific exemptions under Section 3)</li>
+                </ul>
+            </div>
+            
+            <div class="provision modified">
+                <div class="provision-title">Key Terminology Change <span class="badge badge-modified">Modified 2024</span></div>
+                <p><strong>Important:</strong> The 2024 Amendment changed the terminology throughout the Act:</p>
+                <ul style="margin-left: 20px; margin-top: 10px;">
+                    <li>"Data User" → "Data Controller"</li>
+                    <li>"Data User Forum" → "Data Controller Forum"</li>
+                    <li>"Register of Data Users" → "Register of Data Controllers"</li>
+                </ul>
+                <p style="margin-top: 10px;"><em>Note: This change aligns with international terminology (e.g., GDPR uses "data controller")</em></p>
+            </div>
+            
+            <h3>Geographical/Jurisdictional Scope</h3>
+            
+            <div class="provision">
+                <div class="provision-title">Territorial Application</div>
+                <p>The Act applies to:</p>
+                <ul style="margin-left: 20px; margin-top: 10px;">
+                    <li>Data controllers <strong>established in Malaysia</strong></li>
+                    <li>Data controllers <strong>not established in Malaysia</strong> but using equipment in Malaysia for processing personal data (except for transit purposes)</li>
+                </ul>
+            </div>
+            
+            <h3>What Types of Data Processing Are Covered?</h3>
+            
+            <div class="provision">
+                <div class="provision-title">Processing Definition <span class="section-ref">(Section 4)</span></div>
+                <p><strong>"Processing"</strong> means collecting, recording, holding, storing, organizing, adapting, altering, retrieving, consulting, using, disclosing, disseminating, aligning, combining, correcting, erasing or destroying personal data.</p>
+            </div>
+            
+            <div class="example">
+                <div class="example-title">💡 Practical Examples:</div>
+                <ul style="margin-left: 20px; margin-top: 10px;">
+                    <li><strong>✓ Covered:</strong> E-commerce websites collecting customer information</li>
+                    <li><strong>✓ Covered:</strong> Banks processing customer financial data</li>
+                    <li><strong>✓ Covered:</strong> HR systems managing employee information</li>
+                    <li><strong>✓ Covered:</strong> Marketing agencies maintaining customer databases</li>
+                    <li><strong>✓ Covered:</strong> Healthcare providers storing patient records (commercial)</li>
+                </ul>
+            </div>
+            
+            <h3>Sector-Specific Applications</h3>
+            
+            <table>
+                <thead>
+                    <tr>
+                        <th>Sector</th>
+                        <th>Applicability</th>
+                        <th>Special Notes</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Private Sector (Commercial)</td>
+                        <td>✓ Fully Applicable</td>
+                        <td>All commercial transactions involving personal data</td>
+                    </tr>
+                    <tr>
+                        <td>Federal Government</td>
+                        <td>✓ Applicable (with exemptions)</td>
+                        <td>Subject to Section 3 exemptions</td>
+                    </tr>
+                    <tr>
+                        <td>State Governments</td>
+                        <td>✗ Not Applicable</td>
+                        <td>Expressly excluded under Section 3</td>
+                    </tr>
+                    <tr>
+                        <td>Personal/Domestic Use</td>
+                        <td>✗ Not Applicable</td>
+                        <td>Individual or household activities excluded</td>
+                    </tr>
+                </tbody>
+            </table>
+            
+            <h3>Key Exclusions <span class="section-ref">(Section 3 - Non-application)</span></h3>
+            
+            <div class="provision removed">
+                <div class="provision-title">What is NOT Covered</div>
+                <p>The Act does NOT apply to:</p>
+                <ul style="margin-left: 20px; margin-top: 10px;">
+                    <li><strong>(a)</strong> Information processed by an individual only for personal, family, or household affairs</li>
+                    <li><strong>(b)</strong> Information processed for the purpose of a credit reporting business under the Credit Reporting Agencies Act 2010</li>
+                    <li><strong>(c)</strong> Information processed for the purposes of, and is necessary for:
+                        <ul style="margin-left: 20px; margin-top: 5px;">
+                            <li>(i) Preventing or detecting crime</li>
+                            <li>(ii) Apprehending or prosecuting offenders</li>
+                            <li>(iii) National security</li>
+                            <li>(iv) Defense</li>
+                        </ul>
+                    </li>
+                    <li><strong>(d)</strong> State Governments, State authorities, and State public authorities</li>
+                </ul>
+            </div>
+            
+            <div class="important">
+                <strong>Ambiguity Note:</strong> The definition of "commercial transaction" is not explicitly defined in the Act, which may require case-by-case interpretation or further legal consultation for borderline cases.
+            </div>
+        </div>
+
+        <!-- SECTION 2: 7 DATA PROTECTION PRINCIPLES -->
+        <div class="section" id="principles">
+            <h2>2. The 7 Data Protection Principles</h2>
+            
+            <p style="margin-bottom: 30px;">The Act establishes seven core principles that govern how personal data must be processed. All data controllers must comply with these principles.</p>
+            
+            <div class="provision modified">
+                <div class="provision-title">Amendment Note <span class="badge badge-modified">Modified 2024</span></div>
+                <p><strong>Section 5 - Penalties Increased:</strong></p>
+                <ul style="margin-left: 20px; margin-top: 10px;">
+                    <li><strong>Original:</strong> Fine up to RM 300,000 or imprisonment up to 2 years or both</li>
+                    <li><strong>After 2024 Amendment:</strong> Fine up to RM 1,000,000 or imprisonment up to 3 years or both</li>
+                </ul>
+                <p style="margin-top: 10px;"><strong>New Provision:</strong> Data processors must also comply with the Security Principle (Section 9) when processing on behalf of data controllers.</p>
+            </div>
+            
+            <!-- Principle 1: General Principle -->
+            <h3>Principle 1: General Principle <span class="section-ref">(Section 6)</span></h3>
+            
+            <div class="provision">
+                <div class="provision-title">Core Requirements</div>
+                <p><strong>Consent Requirement:</strong></p>
+                <ul style="margin-left: 20px; margin-top: 10px;">
+                    <li>For <strong>regular personal data:</strong> A data controller shall not process personal data unless the data subject has given consent</li>
+                    <li>For <strong>sensitive personal data:</strong> Must process according to Section 40 provisions</li>
+                </ul>
+            </div>
+            
+            <div class="provision">
+                <div class="provision-title">Exceptions to Consent <span class="section-ref">(Section 6(2))</span></div>
+                <p>Personal data may be processed WITHOUT consent when the processing is necessary for:</p>
+                <ol style="margin-left: 20px; margin-top: 10px;">
+                    <li><strong>(a)</strong> Performance of a contract to which the data subject is a party</li>
+                    <li><strong>(b)</strong> Taking steps at the request of the data subject with a view to entering into a contract</li>
+                    <li><strong>(c)</strong> Compliance with any legal obligation (other than contractual)</li>
+                    <li><strong>(d)</strong> Protecting the vital interests of the data subject</li>
+                    <li><strong>(e)</strong> Administration of justice</li>
+                    <li><strong>(f)</strong> Exercise of any functions conferred by law</li>
+                </ol>
+            </div>
+            
+            <div class="provision">
+                <div class="provision-title">Data Processing Standards <span class="section-ref">(Section 6(3))</span></div>
+                <p>Personal data shall not be processed unless:</p>
+                <ul style="margin-left: 20px; margin-top: 10px;">
+                    <li><strong>(a)</strong> Processed for a <strong>lawful purpose</strong> directly related to an activity of the data controller</li>
+                    <li><strong>(b)</strong> The processing is <strong>necessary</strong> for or directly related to that purpose</li>
+                    <li><strong>(c)</strong> The personal data is <strong>adequate but not excessive</strong> in relation to that purpose</li>
+                </ul>
+            </div>
+            
+            <div class="example">
+                <div class="example-title">💡 Practical Example - General Principle:</div>
+                <p><strong>Scenario:</strong> An online retailer collects customer information</p>
+                <ul style="margin-left: 20px; margin-top: 10px;">
+                    <li><strong>✓ Compliant:</strong> Collecting name, address, email for order delivery (necessary and adequate)</li>
+                    <li><strong>✗ Non-compliant:</strong> Requiring IC number, race, religion when only needed for clothing delivery (excessive)</li>
+                    <li><strong>✓ Compliant:</strong> Processing payment without consent as it's necessary for contract performance</li>
+                    <li><strong>✗ Non-compliant:</strong> Sharing data with third-party marketers without consent</li>
+                </ul>
+            </div>
+            
+            <!-- Principle 2: Notice and Choice -->
+            <h3>Principle 2: Notice and Choice Principle <span class="section-ref">(Section 7)</span></h3>
+            
+            <div class="provision">
+                <div class="provision-title">Mandatory Disclosure Requirements</div>
+                <p>A data controller must provide written notice to data subjects informing them of:</p>
+                <ol style="margin-left: 20px; margin-top: 10px;">
+                    <li><strong>(a)</strong> That personal data is being processed, with a description of the data</li>
+                    <li><strong>(b)</strong> The <strong>purposes</strong> for which the data is being collected and further processed</li>
+                    <li><strong>(c)</strong> The <strong>source</strong> of the personal data (if available)</li>
+                    <li><strong>(d)</strong> The data subject's <strong>right to request access and correction</strong>, and contact information for inquiries</li>
+                    <li><strong>(e)</strong> The <strong>class of third parties</strong> to whom data may be disclosed</li>
+                    <li><strong>(f)</strong> <strong>Choices and means</strong> for limiting processing</li>
+                    <li><strong>(g)</strong> Whether supplying the data is <strong>obligatory or voluntary</strong></li>
+                    <li><strong>(h)</strong> <strong>Consequences</strong> if the data subject fails to supply obligatory data</li>
+                </ol>
+            </div>
+            
+            <div class="provision">
+                <div class="provision-title">Timing of Notice <span class="section-ref">(Section 7(2))</span></div>
+                <p>The notice must be given as soon as practicable:</p>
+                <ul style="margin-left: 20px; margin-top: 10px;">
+                    <li>When the data subject is first asked to provide personal data, OR</li>
+                    <li>When the data controller first collects the personal data, OR</li>
+                    <li>Before using the data for a purpose other than collection purpose, OR</li>
+                    <li>Before disclosing the data to a third party</li>
+                </ul>
+            </div>
+            
+            <div class="provision">
+                <div class="provision-title">Language Requirements <span class="section-ref">(Section 7(3))</span></div>
+                <p>Notice must be provided in <strong>both Bahasa Malaysia and English</strong>, and individuals must have a clear and readily accessible means to exercise their choice in both languages.</p>
+            </div>
+            
+            <div class="example">
+                <div class="example-title">💡 Practical Example - Notice and Choice:</div>
+                <p><strong>Scenario:</strong> A mobile app registration form</p>
+                <ul style="margin-left: 20px; margin-top: 10px;">
+                    <li><strong>✓ Compliant:</strong> Privacy notice clearly states data is used for service delivery and may be shared with payment processors</li>
+                    <li><strong>✓ Compliant:</strong> Provides opt-in checkboxes for marketing communications</li>
+                    <li><strong>✓ Compliant:</strong> Privacy policy available in both Bahasa Malaysia and English</li>
+                    <li><strong>✗ Non-compliant:</strong> Pre-checked boxes for marketing consent</li>
+                    <li><strong>✗ Non-compliant:</strong> Vague "we may share with partners" without specifying classes of third parties</li>
+                </ul>
+            </div>
+            
+            <!-- Principle 3: Disclosure -->
+            <h3>Principle 3: Disclosure Principle <span class="section-ref">(Section 8)</span></h3>
+            
+            <div class="provision">
+                <div class="provision-title">Disclosure Restrictions</div>
+                <p>Personal data shall NOT be disclosed without the data subject's consent, EXCEPT:</p>
+                <ul style="margin-left: 20px; margin-top: 10px;">
+                    <li>For the purpose it was collected, OR a purpose directly related to it</li>
+                    <li>To third parties within the classes specified in the notice (Section 7(1)(e))</li>
+                    <li>In circumstances permitted under Section 39 (see Exemptions)</li>
+                </ul>
+            </div>
+            
+            <div class="example">
+                <div class="example-title">�� Practical Example - Disclosure:</div>
+                <p><strong>Scenario:</strong> A hospital collects patient data for treatment</p>
+                <ul style="margin-left: 20px; margin-top: 10px;">
+                    <li><strong>✓ Compliant:</strong> Sharing with consulting specialists (directly related to treatment)</li>
+                    <li><strong>✓ Compliant:</strong> Disclosing to insurance company if patient consented in notice</li>
+                    <li><strong>✗ Non-compliant:</strong> Selling patient database to pharmaceutical companies without consent</li>
+                    <li><strong>✗ Non-compliant:</strong> Sharing patient data with hospital's parent company for marketing without consent</li>
+                </ul>
+            </div>
+            
+            <!-- Principle 4: Security -->
+            <h3>Principle 4: Security Principle <span class="section-ref">(Section 9)</span></h3>
+            
+            <div class="provision modified">
+                <div class="provision-title">Security Requirements <span class="badge badge-modified">Modified 2024</span></div>
+                <p>Data controllers must take <strong>practical steps</strong> to protect personal data from:</p>
+                <ul style="margin-left: 20px; margin-top: 10px;">
+                    <li>Loss</li>
+                    <li>Misuse</li>
+                    <li>Modification</li>
+                    <li>Unauthorized or accidental access or disclosure</li>
+                    <li>Alteration</li>
+                    <li>Destruction</li>
+                </ul>
+                
+                <p style="margin-top: 15px;"><strong>Factors to consider:</strong></p>
+                <ol style="margin-left: 20px; margin-top: 10px;">
+                    <li>Nature of the personal data and harm from security breach</li>
+                    <li>Place or location where data is stored</li>
+                    <li>Security measures in equipment storing the data</li>
+                    <li>Measures for ensuring reliability, integrity, and competence of personnel</li>
+                    <li>Measures for ensuring secure data transfer</li>
+                </ol>
+                
+                <p style="margin-top: 15px;"><strong>2024 Amendment:</strong> Data processors must also comply with Security Principle when processing on behalf of data controllers (Section 5(1a)).</p>
+            </div>
+            
+            <div class="provision modified">
+                <div class="provision-title">Increased Penalties <span class="badge badge-modified">Modified 2024</span></div>
+                <ul style="margin-left: 20px; margin-top: 10px;">
+                    <li><strong>Before 2024:</strong> Fine up to RM 300,000 or 2 years imprisonment</li>
+                    <li><strong>After 2024:</strong> Fine up to RM 1,000,000 or 3 years imprisonment</li>
+                </ul>
+            </div>
+            
+            <div class="example">
+                <div class="example-title">💡 Practical Example - Security:</div>
+                <p><strong>Scenario:</strong> An e-commerce platform stores customer data</p>
+                <ul style="margin-left: 20px; margin-top: 10px;">
+                    <li><strong>✓ Compliant:</strong> Encrypting stored passwords and payment information</li>
+                    <li><strong>✓ Compliant:</strong> Using SSL/TLS for data transmission</li>
+                    <li><strong>✓ Compliant:</strong> Implementing role-based access controls for employee access</li>
+                    <li><strong>✓ Compliant:</strong> Regular security audits and penetration testing</li>
+                    <li><strong>✗ Non-compliant:</strong> Storing passwords in plain text</li>
+                    <li><strong>✗ Non-compliant:</strong> Allowing all employees unrestricted access to customer databases</li>
+                </ul>
+            </div>
+            
+            <!-- Principle 5: Retention -->
+            <h3>Principle 5: Retention Principle <span class="section-ref">(Section 10)</span></h3>
+            
+            <div class="provision">
+                <div class="provision-title">Data Retention Limits</div>
+                <p><strong>Key Requirements:</strong></p>
+                <ul style="margin-left: 20px; margin-top: 10px;">
+                    <li>Personal data shall NOT be kept longer than necessary for the fulfillment of its purpose</li>
+                    <li>Data controllers have a duty to take all reasonable steps to <strong>destroy or permanently delete</strong> personal data when no longer required</li>
+                </ul>
+            </div>
+            
+            <div class="example">
+                <div class="example-title">�� Practical Example - Retention:</div>
+                <p><strong>Scenario:</strong> HR department maintains employee records</p>
+                <ul style="margin-left: 20px; margin-top: 10px;">
+                    <li><strong>✓ Compliant:</strong> Retaining employment records for 7 years as required by law</li>
+                    <li><strong>✓ Compliant:</strong> Deleting job application data of rejected candidates after 1 year</li>
+                    <li><strong>✗ Non-compliant:</strong> Keeping all employee data indefinitely "just in case"</li>
+                    <li><strong>✗ Non-compliant:</strong> Retaining detailed customer browsing history for 10 years when only needed for 6 months</li>
+                </ul>
+            </div>
+            
+            <!-- Principle 6: Data Integrity -->
+            <h3>Principle 6: Data Integrity Principle <span class="section-ref">(Section 11)</span></h3>
+            
+            <div class="provision">
+                <div class="provision-title">Accuracy Requirements</div>
+                <p>Data controllers must take reasonable steps to ensure personal data is:</p>
+                <ul style="margin-left: 20px; margin-top: 10px;">
+                    <li><strong>Accurate</strong></li>
+                    <li><strong>Complete</strong></li>
+                    <li><strong>Not misleading</strong></li>
+                    <li><strong>Kept up-to-date</strong></li>
+                </ul>
+                <p style="margin-top: 10px;">This must be considered in relation to the purpose for which the data was collected and further processed.</p>
+            </div>
+            
+            <div class="example">
+                <div class="example-title">💡 Practical Example - Data Integrity:</div>
+                <p><strong>Scenario:</strong> A telecommunications company maintains customer accounts</p>
+                <ul style="margin-left: 20px; margin-top: 10px;">
+                    <li><strong>✓ Compliant:</strong> Prompting customers to update contact details annually</li>
+                    <li><strong>✓ Compliant:</strong> Verifying address changes before updating</li>
+                    <li><strong>✓ Compliant:</strong> Implementing data validation during input</li>
+                    <li><strong>✗ Non-compliant:</strong> Never updating customer records even when notified of changes</li>
+                    <li><strong>✗ Non-compliant:</strong> Using outdated customer information for credit decisions</li>
+                </ul>
+            </div>
+            
+            <!-- Principle 7: Access -->
+            <h3>Principle 7: Access Principle <span class="section-ref">(Section 12)</span></h3>
+            
+            <div class="provision modified">
+                <div class="provision-title">Data Subject Access Rights <span class="badge badge-modified">Modified 2024</span></div>
+                <p>Data subjects have the right to:</p>
+                <ul style="margin-left: 20px; margin-top: 10px;">
+                    <li><strong>(a)</strong> Be informed whether personal data is being processed</li>
+                    <li><strong>(b)</strong> Be given a description of the personal data, purposes of processing, and recipients</li>
+                    <li><strong>(c)</strong> Have communicated to them in an intelligible form:
+                        <ul style="margin-left: 20px; margin-top: 5px;">
+                            <li>The personal data being processed</li>
+                            <li>Information about the source of the data</li>
+                        </ul>
+                    </li>
+                    <li><strong>(d)</strong> Be given information about the data processing mechanism (to the extent it can be communicated intelligibly)</li>
+                    <li><strong>(e)</strong> Request correction of inaccurate, incomplete, misleading, or not up-to-date personal data</li>
+                    <li><strong>(f)</strong> Request withdrawal of consent (added in 2024)</li>
+                    <li><strong>(g)</strong> <strong>Request data portability</strong> <span class="badge badge-new">New 2024</span></li>
+                </ul>
+            </div>
+            
+            <div class="provision new">
+                <div class="provision-title">New Right: Data Portability <span class="badge badge-new">New 2024</span></div>
+                <p>The 2024 Amendment introduced the right to data portability, allowing data subjects to receive their personal data in a structured, commonly used format and to transmit this data to another data controller.</p>
+            </div>
+            
+            <div class="example">
+                <div class="example-title">💡 Practical Example - Access:</div>
+                <p><strong>Scenario:</strong> Customer requests access to their data from a bank</p>
+                <ul style="margin-left: 20px; margin-top: 10px;">
+                    <li><strong>✓ Compliant:</strong> Providing data within 21 days (as per regulations)</li>
+                    <li><strong>✓ Compliant:</strong> Providing data in intelligible format (e.g., clear report, not raw database dump)</li>
+                    <li><strong>✓ Compliant (2024):</strong> Providing data in portable format (e.g., CSV, JSON) upon request</li>
+                    <li><strong>✗ Non-compliant:</strong> Charging excessive fees for data access</li>
+                    <li><strong>✗ Non-compliant:</strong> Ignoring or delaying access requests without valid reason</li>
+                </ul>
+            </div>
+            
+            <div class="important">
+                <strong>Note on Transitional Period:</strong> The 2024 Amendment allows the Minister to appoint different dates for different provisions to come into operation. Organizations should monitor official gazettes for implementation dates.
+            </div>
+        </div>
+
+        <!-- SECTION 3: RIGHTS OF DATA SUBJECTS -->
+        <div class="section" id="rights">
+            <h2>3. Rights of Data Subjects</h2>
+            
+            <p style="margin-bottom: 30px;">Under the PDPA, individuals (data subjects) have specific rights regarding their personal data. These rights are detailed in Division 4 of the Act (Sections 30-40).</p>
+            
+            <h3>3.1 Right to Access Personal Data <span class="section-ref">(Section 30)</span></h3>
+            
+            <div class="provision">
+                <div class="provision-title">Access Request Rights</div>
+                <p>A data subject may make a "data access request" to a data controller to:</p>
+                <ul style="margin-left: 20px; margin-top: 10px;">
+                    <li>Be informed whether the data controller is processing personal data about them</li>
+                    <li>Be given a description of the personal data, purposes, and potential recipients</li>
+                    <li>Have access to the personal data</li>
+                    <li>Be informed about the data processing mechanism</li>
+                </ul>
+            </div>
+            
+            <h3>3.2 Compliance with Access Requests <span class="section-ref">(Section 31)</span></h3>
+            
+            <div class="provision">
+                <div class="provision-title">Data Controller Obligations</div>
+                <p>Upon receiving a data access request, the data controller must:</p>
+                <ul style="margin-left: 20px; margin-top: 10px;">
+                    <li><strong>Inform</strong> the requestor whether personal data is being processed</li>
+                    <li><strong>Comply</strong> with the request as soon as practicable (typically within 21 days)</li>
+                    <li><strong>Provide</strong> the information in intelligible form</li>
+                    <li>May charge a <strong>prescribed fee</strong> (must not exceed cost of compliance)</li>
+                </ul>
+            </div>
+            
+            <h3>3.3 When Access Can Be Refused <span class="section-ref">(Section 32)</span></h3>
+            
+            <div class="provision">
+                <div class="provision-title">Grounds for Refusal</div>
+                <p>A data controller may refuse a data access request if:</p>
+                <ul style="margin-left: 20px; margin-top: 10px;">
+                    <li><strong>(a)</strong> The request is not made in accordance with Section 30</li>
+                    <li><strong>(b)</strong> Complying would reveal another person's personal data (except with consent or if reasonable)</li>
+                    <li><strong>(c)</strong> The data is subject to legal professional privilege</li>
+                    <li><strong>(d)</strong> The request is frivolous or vexatious</li>
+                    <li><strong>(e)</strong> The fee has not been paid</li>
+                    <li><strong>(f)</strong> Other circumstances prescribed by Minister</li>
+                </ul>
+            </div>
+            
+            <h3>3.4 Right to Correct Personal Data <span class="section-ref">(Section 34)</span></h3>
+            
+            <div class="provision modified">
+                <div class="provision-title">Correction Rights <span class="badge badge-modified">Enhanced 2024</span></div>
+                <p>A data subject may request correction of personal data that is:</p>
+                <ul style="margin-left: 20px; margin-top: 10px;">
+                    <li>Inaccurate</li>
+                    <li>Incomplete</li>
+                    <li>Misleading</li>
+                    <li>Not up-to-date</li>
+                </ul>
+                <p style="margin-top: 10px;">The data controller must correct the data as soon as practicable and send corrected data to third parties to whom it was disclosed (unless impracticable).</p>
+            </div>
+            
+            <h3>3.5 Right to Withdraw Consent <span class="section-ref">(Section 38)</span></h3>
+            
+            <div class="provision">
+                <div class="provision-title">Consent Withdrawal</div>
+                <p>Data subjects have the right to withdraw consent at any time by written notice, unless:</p>
+                <ul style="margin-left: 20px; margin-top: 10px;">
+                    <li>Withdrawal is prohibited by law</li>
+                    <li>It's contrary to a contract between the parties</li>
+                </ul>
+                <p style="margin-top: 10px;"><strong>Effect of withdrawal:</strong> The data controller must cease processing unless another lawful basis exists.</p>
+            </div>
+            
+            <h3>3.6 Right to Data Portability <span class="section-ref">(New in 2024)</span></h3>
+            
+            <div class="provision new">
+                <div class="provision-title">Data Portability Right <span class="badge badge-new">New 2024</span></div>
+                <p>The 2024 Amendment introduced the right to data portability by:</p>
+                <ul style="margin-left: 20px; margin-top: 10px;">
+                    <li>Expanding the definition of "requestor" to include "data portability request"</li>
+                    <li>Allowing data subjects to receive their data in a structured, commonly used, and machine-readable format</li>
+                    <li>Enabling data subjects to transmit their data to another data controller</li>
+                </ul>
+                <p style="margin-top: 10px;"><em>Note: Detailed implementation regulations may follow.</em></p>
+            </div>
+            
+            <h3>3.7 Limitations and Conditions</h3>
+            
+            <table>
+                <thead>
+                    <tr>
+                        <th>Right</th>
+                        <th>Time Frame</th>
+                        <th>Key Limitations</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Access Request</td>
+                        <td>21 days (typical)</td>
+                        <td>May be refused if frivolous, vexatious, or affects others' privacy</td>
+                    </tr>
+                    <tr>
+                        <td>Correction Request</td>
+                        <td>As soon as practicable</td>
+                        <td>Only for inaccurate/incomplete data; may require evidence</td>
+                    </tr>
+                    <tr>
+                        <td>Withdraw Consent</td>
+                        <td>Immediate upon notice</td>
+                        <td>Not applicable if prohibited by law or contractual obligation</td>
+                    </tr>
+                    <tr>
+                        <td>Data Portability</td>
+                        <td>TBD (New 2024)</td>
+                        <td>Subject to regulations and technical feasibility</td>
+                    </tr>
+                </tbody>
+            </table>
+            
+            <h3>3.8 How to Exercise Rights</h3>
+            
+            <div class="provision">
+                <div class="provision-title">Procedural Requirements</div>
+                <p>To exercise rights under the PDPA:</p>
+                <ol style="margin-left: 20px; margin-top: 10px;">
+                    <li><strong>Submit written request:</strong> Usually via form provided by data controller or written letter/email</li>
+                    <li><strong>Provide identification:</strong> To verify identity and prevent unauthorized access</li>
+                    <li><strong>Specify the right:</strong> Clearly state whether requesting access, correction, withdrawal, or portability</li>
+                    <li><strong>Pay fee if applicable:</strong> For access requests, reasonable fees may apply</li>
+                    <li><strong>Await response:</strong> Data controller must respond within reasonable time (typically 21 days)</li>
+                </ol>
+            </div>
+            
+            <div class="example">
+                <div class="example-title">💡 Practical Example - Exercising Rights:</div>
+                <p><strong>Scenario:</strong> Customer wants to access data from online retailer</p>
+                <ol style="margin-left: 20px; margin-top: 10px;">
+                    <li>Customer submits data access request via company's online form</li>
+                    <li>Company acknowledges request within 48 hours</li>
+                    <li>Customer provides copy of IC for verification</li>
+                    <li>Company provides comprehensive data report within 14 days</li>
+                    <li>Customer notices incorrect address and submits correction request</li>
+                    <li>Company corrects data within 7 days and confirms correction</li>
+                </ol>
+            </div>
+            
+            <div class="important">
+                <strong>Complaint Rights:</strong> If a data controller refuses a request or fails to respond, data subjects can lodge a complaint with the Personal Data Protection Commissioner (see Enforcement section).
+            </div>
+        </div>
+
+        <!-- SECTION 4: OBLIGATIONS OF DATA CONTROLLERS -->
+        <div class="section" id="obligations">
+            <h2>4. Obligations of Data Controllers</h2>
+            
+            <p style="margin-bottom: 30px;">Data controllers (formerly "data users") have various obligations under the PDPA, including registration, appointing data protection officers, and maintaining records.</p>
+            
+            <h3>4.1 Registration Requirements <span class="section-ref">(Division 2, Sections 13-20)</span></h3>
+            
+            <div class="provision">
+                <div class="provision-title">Who Must Register</div>
+                <p><strong>Classes of data controllers</strong> prescribed by the Minister must register with the Personal Data Protection Commissioner.</p>
+                <p style="margin-top: 10px;"><strong>Note:</strong> Not all data controllers are required to register - only those in classes specified by ministerial regulations.</p>
+            </div>
+            
+            <div class="provision">
+                <div class="provision-title">Registration Process <span class="section-ref">(Sections 14-16)</span></div>
+                <p>The registration process involves:</p>
+                <ol style="margin-left: 20px; margin-top: 10px;">
+                    <li>Submit application to Commissioner in prescribed form</li>
+                    <li>Include prescribed information and pay prescribed fee</li>
+                    <li>Commissioner issues certificate of registration if satisfied</li>
+                    <li>Certificate valid for prescribed period (subject to renewal)</li>
+                </ol>
+            </div>
+            
+            <div class="provision">
+                <div class="provision-title">Register of Data Controllers <span class="section-ref">(Section 20)</span></div>
+                <p>The Commissioner maintains a public Register of Data Controllers containing:</p>
+                <ul style="margin-left: 20px; margin-top: 10px;">
+                    <li>Name and address of each registered data controller</li>
+                    <li>Description of personal data processed</li>
+                    <li>Purpose of processing</li>
+                    <li>Description of data subjects</li>
+                    <li>Classes of third parties to whom data may be disclosed</li>
+                    <li>Countries/territories to which data may be transferred</li>
+                </ul>
+            </div>
+            
+            <h3>4.2 Data Controller Forums and Codes of Practice <span class="section-ref">(Division 3, Sections 21-29)</span></h3>
+            
+            <div class="provision modified">
+                <div class="provision-title">Industry Self-Regulation <span class="badge badge-modified">Terminology Updated 2024</span></div>
+                <p><strong>Data Controller Forums</strong> (formerly "Data User Forums") can be established to promote self-regulation within industries.</p>
+                
+                <p style="margin-top: 15px;"><strong>Functions:</strong></p>
+                <ul style="margin-left: 20px; margin-top: 10px;">
+                    <li>Develop and submit codes of practice to the Commissioner</li>
+                    <li>Promote compliance with PDPA within their sector</li>
+                    <li>Provide guidance to members</li>
+                </ul>
+                
+                <p style="margin-top: 15px;"><strong>Codes of Practice:</strong></p>
+                <ul style="margin-left: 20px; margin-top: 10px;">
+                    <li>Must be approved by the Commissioner</li>
+                    <li>Provide sector-specific guidance on PDPA compliance</li>
+                    <li>Failure to comply with code may be taken into account in proceedings</li>
+                </ul>
+            </div>
+            
+            <h3>4.3 General Compliance Obligations</h3>
+            
+            <table>
+                <thead>
+                    <tr>
+                        <th>Obligation</th>
+                        <th>Description</th>
+                        <th>Legal Basis</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Comply with 7 Principles</td>
+                        <td>Must adhere to all data protection principles</td>
+                        <td>Section 5</td>
+                    </tr>
+                    <tr>
+                        <td>Provide Notice</td>
+                        <td>Inform data subjects about processing in Bahasa & English</td>
+                        <td>Section 7</td>
+                    </tr>
+                    <tr>
+                        <td>Implement Security</td>
+                        <td>Take practical steps to protect data</td>
+                        <td>Section 9</td>
+                    </tr>
+                    <tr>
+                        <td>Respond to Requests</td>
+                        <td>Process access and correction requests timely</td>
+                        <td>Sections 31, 35</td>
+                    </tr>
+                    <tr>
+                        <td>Register (if applicable)</td>
+                        <td>Register with Commissioner if in prescribed class</td>
+                        <td>Section 14</td>
+                    </tr>
+                    <tr>
+                        <td>Maintain Records</td>
+                        <td>Keep records of processing activities</td>
+                        <td>Various sections</td>
+                    </tr>
+                    <tr>
+                        <td>Report Breaches</td>
+                        <td>Notify Commissioner of personal data breaches</td>
+                        <td>Regulations</td>
+                    </tr>
+                </tbody>
+            </table>
+            
+            <h3>4.4 Data Processor Obligations</h3>
+            
+            <div class="provision new">
+                <div class="provision-title">Data Processor Security Duty <span class="badge badge-new">New 2024</span></div>
+                <p>The 2024 Amendment introduced explicit obligations for data processors:</p>
+                <ul style="margin-left: 20px; margin-top: 10px;">
+                    <li><strong>Security Principle compliance:</strong> Data processors must comply with Section 9 (Security Principle) when processing on behalf of data controllers</li>
+                    <li><strong>Penalty:</strong> Violations subject to same increased penalties (up to RM 1,000,000 or 3 years imprisonment)</li>
+                </ul>
+                <p style="margin-top: 10px;"><em>This clarifies that data processors share responsibility for data security.</em></p>
+            </div>
+            
+            <h3>4.5 Record-Keeping Requirements</h3>
+            
+            <div class="provision">
+                <div class="provision-title">Documentation Obligations</div>
+                <p>While not explicitly detailed in one section, data controllers should maintain:</p>
+                <ul style="margin-left: 20px; margin-top: 10px;">
+                    <li><strong>Processing records:</strong> Types of data, purposes, recipients</li>
+                    <li><strong>Consent records:</strong> Evidence of consent obtained from data subjects</li>
+                    <li><strong>Security measures:</strong> Documentation of technical and organizational security</li>
+                    <li><strong>Data breach records:</strong> Incidents, responses, and notifications</li>
+                    <li><strong>Request logs:</strong> Access, correction, and other data subject requests</li>
+                    <li><strong>Third-party agreements:</strong> Contracts with data processors and other third parties</li>
+                </ul>
+            </div>
+            
+            <div class="example">
+                <div class="example-title">💡 Practical Example - Compliance Program:</div>
+                <p><strong>A typical PDPA compliance program includes:</strong></p>
+                <ol style="margin-left: 20px; margin-top: 10px;">
+                    <li><strong>Data mapping:</strong> Identify all personal data processed, sources, and flows</li>
+                    <li><strong>Privacy notices:</strong> Draft and publish privacy notices in Bahasa & English</li>
+                    <li><strong>Consent mechanisms:</strong> Implement systems to obtain and record consent</li>
+                    <li><strong>Security measures:</strong> Deploy encryption, access controls, monitoring</li>
+                    <li><strong>Staff training:</strong> Regular training on PDPA requirements</li>
+                    <li><strong>Vendor management:</strong> Ensure third-party processors comply</li>
+                    <li><strong>Request handling:</strong> Establish processes for access/correction requests</li>
+                    <li><strong>Incident response:</strong> Develop data breach response plan</li>
+                    <li><strong>Regular audits:</strong> Periodic compliance reviews and updates</li>
+                </ol>
+            </div>
+        </div>
+
+        <!-- SECTION 5: CROSS-BORDER DATA TRANSFER -->
+        <div class="section" id="crossborder">
+            <h2>5. Cross-Border Data Transfer</h2>
+            
+            <p style="margin-bottom: 30px;">The PDPA regulates the transfer of personal data outside Malaysia to ensure adequate protection is maintained.</p>
+            
+            <h3>5.1 General Prohibition and Conditions <span class="section-ref">(Section 129)</span></h3>
+            
+            <div class="provision">
+                <div class="provision-title">Transfer Restrictions</div>
+                <p><strong>General Rule:</strong> Personal data shall NOT be transferred to a place outside Malaysia unless that place ensures a level of protection comparable to Malaysia.</p>
+                
+                <p style="margin-top: 15px;"><strong>How to determine "adequate protection":</strong></p>
+                <ul style="margin-left: 20px; margin-top: 10px;">
+                    <li>Examine the data protection laws of the receiving country</li>
+                    <li>Consider international agreements or arrangements</li>
+                    <li>Assess security measures at the receiving location</li>
+                    <li>Review contractual provisions for data protection</li>
+                </ul>
+            </div>
+            
+            <h3>5.2 Permitted Transfer Mechanisms</h3>
+            
+            <div class="provision">
+                <div class="provision-title">Ways to Transfer Data Abroad</div>
+                <p>Personal data may be transferred outside Malaysia if:</p>
+                <ol style="margin-left: 20px; margin-top: 10px;">
+                    <li><strong>Adequate protection exists:</strong> The destination has comparable data protection standards</li>
+                    <li><strong>Consent obtained:</strong> The data subject has consented to the transfer</li>
+                    <li><strong>Contractual necessity:</strong> Transfer is necessary for performance of a contract with the data subject</li>
+                    <li><strong>Legal obligation:</strong> Transfer is required by law</li>
+                    <li><strong>Public interest:</strong> Transfer is in the public interest</li>
+                    <li><strong>Legal proceedings:</strong> Transfer is for establishing, exercising, or defending legal rights</li>
+                    <li><strong>Vital interests:</strong> Transfer is necessary to protect vital interests of the data subject</li>
+                </ol>
+            </div>
+            
+            <h3>5.3 Standard Contractual Clauses</h3>
+            
+            <div class="provision">
+                <div class="provision-title">Contractual Safeguards</div>
+                <p>Where a destination country lacks adequate data protection laws, organizations often use:</p>
+                <ul style="margin-left: 20px; margin-top: 10px;">
+                    <li><strong>Data Transfer Agreements:</strong> Contracts that impose PDPA-level obligations on the recipient</li>
+                    <li><strong>Standard Contractual Clauses:</strong> Pre-approved clauses that ensure adequate protection</li>
+                    <li><strong>Binding Corporate Rules:</strong> Internal policies for multinational organizations</li>
+                </ul>
+                <p style="margin-top: 10px;"><em>Note: The Commissioner may provide guidance on acceptable contractual terms.</em></p>
+            </div>
+            
+            <h3>5.4 Whitelisted Countries/Regions</h3>
+            
+            <div class="provision">
+                <div class="provision-title">Recognized Jurisdictions</div>
+                <p><strong>Ministerial Authority:</strong> The Minister may prescribe countries or territories deemed to have adequate data protection standards.</p>
+                <p style="margin-top: 10px;"><strong>Current Status:</strong> As of the time of this analysis, no official whitelist has been publicly released. Organizations should:</p>
+                <ul style="margin-left: 20px; margin-top: 10px;">
+                    <li>Monitor official gazettes for updates</li>
+                    <li>Conduct individual adequacy assessments</li>
+                    <li>Seek legal advice for specific transfers</li>
+                </ul>
+            </div>
+            
+            <div class="important">
+                <strong>Practical Guidance:</strong> Countries with GDPR-level protection (EU member states) or comprehensive data protection laws (e.g., Singapore, Australia, South Korea) are generally considered to provide adequate protection, though formal determination by Malaysian authorities is advisable.
+            </div>
+            
+            <table>
+                <thead>
+                    <tr>
+                        <th>Transfer Scenario</th>
+                        <th>Requirement</th>
+                        <th>Example</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Cloud storage in Singapore</td>
+                        <td>Adequate protection likely (PDPA Singapore)</td>
+                        <td>AWS Singapore region for Malaysian customer data</td>
+                    </tr>
+                    <tr>
+                        <td>Cloud storage in EU</td>
+                        <td>Adequate protection (GDPR)</td>
+                        <td>Microsoft Azure EU regions</td>
+                    </tr>
+                    <tr>
+                        <td>Outsourcing to India</td>
+                        <td>Assess adequacy or use SCCs</td>
+                        <td>Customer service center with data transfer agreement</td>
+                    </tr>
+                    <tr>
+                        <td>Outsourcing to USA</td>
+                        <td>No adequacy finding - use SCCs or consent</td>
+                        <td>Cloud services with standard contractual clauses</td>
+                    </tr>
+                    <tr>
+                        <td>Intra-corporate transfer</td>
+                        <td>Binding Corporate Rules or SCCs</td>
+                        <td>Malaysian subsidiary to parent company overseas</td>
+                    </tr>
+                </tbody>
+            </table>
+            
+            <div class="example">
+                <div class="example-title">💡 Practical Example - Cross-Border Transfer:</div>
+                <p><strong>Scenario:</strong> Malaysian e-commerce company uses cloud services</p>
+                <ol style="margin-left: 20px; margin-top: 10px;">
+                    <li><strong>Assessment:</strong> Company evaluates cloud provider's data centers</li>
+                    <li><strong>Option 1:</strong> Select Singapore/EU region (likely adequate protection)</li>
+                    <li><strong>Option 2:</strong> Use US region but execute data processing agreement with standard contractual clauses</li>
+                    <li><strong>Privacy Notice:</strong> Inform customers that data may be stored in [country]</li>
+                    <li><strong>Documentation:</strong> Maintain records of adequacy assessment or contractual safeguards</li>
+                </ol>
+            </div>
+        </div>
+
+        <!-- SECTION 6: SENSITIVE PERSONAL DATA -->
+        <div class="section" id="sensitive">
+            <h2>6. Sensitive Personal Data</h2>
+            
+            <p style="margin-bottom: 30px;">Sensitive personal data receives heightened protection under the PDPA due to its sensitive nature and potential for discrimination or harm.</p>
+            
+            <h3>6.1 Definition and Categories <span class="section-ref">(Section 4)</span></h3>
+            
+            <div class="provision modified">
+                <div class="provision-title">What is Sensitive Personal Data? <span class="badge badge-modified">Expanded 2024</span></div>
+                <p><strong>"Sensitive personal data"</strong> means personal data consisting of information as to:</p>
+                <ol style="margin-left: 20px; margin-top: 10px;">
+                    <li>Physical or mental health or condition</li>
+                    <li>Political opinions</li>
+                    <li>Religious beliefs or other beliefs of a similar nature</li>
+                    <li>Commission or alleged commission of any offence</li>
+                    <li><strong><span class="badge badge-new">New 2024</span> Biometric data</strong></li>
+                </ol>
+                
+                <p style="margin-top: 15px;"><strong>Biometric Data Definition:</strong> Any personal data resulting from technical processing relating to the physical, physiological, or behavioural characteristics of a person.</p>
+            </div>
+            
+            <div class="provision new">
+                <div class="provision-title">2024 Amendment - Biometric Data Added <span class="badge badge-new">New 2024</span></div>
+                <p>The 2024 Amendment explicitly added <strong>biometric data</strong> to the definition of sensitive personal data.</p>
+                
+                <p style="margin-top: 15px;"><strong>Examples of biometric data:</strong></p>
+                <ul style="margin-left: 20px; margin-top: 10px;">
+                    <li>Fingerprints</li>
+                    <li>Facial recognition data</li>
+                    <li>Iris scans</li>
+                    <li>Voice prints</li>
+                    <li>DNA data</li>
+                    <li>Gait analysis</li>
+                    <li>Behavioral patterns (typing rhythm, signature dynamics)</li>
+                </ul>
+                
+                <p style="margin-top: 15px;"><strong>Impact:</strong> This addition reflects growing concerns about biometric technologies and brings Malaysia in line with international standards like GDPR.</p>
+            </div>
+            
+            <h3>6.2 Additional Protections Required <span class="section-ref">(Section 40)</span></h3>
+            
+            <div class="provision">
+                <div class="provision-title">Heightened Standards for Processing</div>
+                <p><strong>General Rule:</strong> Sensitive personal data shall NOT be processed except in accordance with Section 40.</p>
+                
+                <p style="margin-top: 15px;"><strong>Section 40 - Processing of Sensitive Personal Data:</strong></p>
+                <p>A data controller may process sensitive personal data about a data subject ONLY if:</p>
+                <ol style="margin-left: 20px; margin-top: 10px;">
+                    <li><strong>(a)</strong> The data subject has given <strong>explicit consent</strong> to the processing</li>
+                    <li><strong>(b)</strong> The processing is necessary:
+                        <ul style="margin-left: 20px; margin-top: 5px;">
+                            <li>(i) For purposes of exercising/performing legal rights or obligations</li>
+                            <li>(ii) To protect vital interests of the data subject</li>
+                            <li>(iii) For administration of justice</li>
+                            <li>(iv) For medical purposes and is undertaken by health professional or equivalent person</li>
+                            <li>(v) For specified purposes in the public interest</li>
+                        </ul>
+                    </li>
+                </ol>
+            </div>
+            
+            <h3>6.3 Special Processing Conditions</h3>
+            
+            <table>
+                <thead>
+                    <tr>
+                        <th>Data Type</th>
+                        <th>Consent Requirement</th>
+                        <th>Special Conditions</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Health Information</td>
+                        <td>Explicit consent</td>
+                        <td>Medical purposes by healthcare professional; or vital interests</td>
+                    </tr>
+                    <tr>
+                        <td>Political Opinions</td>
+                        <td>Explicit consent</td>
+                        <td>Public interest purposes (e.g., electoral administration)</td>
+                    </tr>
+                    <tr>
+                        <td>Religious Beliefs</td>
+                        <td>Explicit consent</td>
+                        <td>Limited exceptions for religious organizations</td>
+                    </tr>
+                    <tr>
+                        <td>Criminal Offences</td>
+                        <td>Explicit consent</td>
+                        <td>Administration of justice; crime prevention</td>
+                    </tr>
+                    <tr>
+                        <td>Biometric Data (New 2024)</td>
+                        <td>Explicit consent</td>
+                        <td>Same as other sensitive data; identity verification purposes</td>
+                    </tr>
+                </tbody>
+            </table>
+            
+            <h3>6.4 Explicit Consent vs. Regular Consent</h3>
+            
+            <div class="provision">
+                <div class="provision-title">Higher Standard for Sensitive Data</div>
+                <p><strong>Regular Consent:</strong> For non-sensitive personal data</p>
+                <ul style="margin-left: 20px; margin-top: 10px;">
+                    <li>May be implied from conduct in certain circumstances</li>
+                    <li>Opt-out mechanisms may be acceptable in some cases</li>
+                </ul>
+                
+                <p style="margin-top: 15px;"><strong>Explicit Consent:</strong> Required for sensitive personal data</p>
+                <ul style="margin-left: 20px; margin-top: 10px;">
+                    <li>Must be <strong>clear, specific, and unambiguous</strong></li>
+                    <li>Should be <strong>opt-in</strong> (not pre-checked boxes)</li>
+                    <li>Must be <strong>separately obtained</strong> for sensitive data</li>
+                    <li>Should be <strong>documented</strong> and easily provable</li>
+                </ul>
+            </div>
+            
+            <div class="example">
+                <div class="example-title">💡 Practical Examples - Sensitive Data:</div>
+                
+                <p><strong>Example 1: Healthcare App</strong></p>
+                <ul style="margin-left: 20px; margin-top: 10px;">
+                    <li><strong>✓ Compliant:</strong> Separate consent checkbox: "I consent to processing of my health data for medical consultation purposes"</li>
+                    <li><strong>✗ Non-compliant:</strong> General terms: "I agree to the processing of all my information"</li>
+                </ul>
+                
+                <p style="margin-top: 15px;"><strong>Example 2: Biometric Attendance System (New context after 2024)</strong></p>
+                <ul style="margin-left: 20px; margin-top: 10px;">
+                    <li><strong>✓ Compliant:</strong> Explicit consent form explaining fingerprint data is sensitive, purpose is attendance tracking, and how it's protected</li>
+                    <li><strong>✓ Compliant:</strong> Offering alternative non-biometric methods for those who refuse</li>
+                    <li><strong>✗ Non-compliant:</strong> Mandatory fingerprint scanning without explicit consent or alternatives</li>
+                </ul>
+                
+                <p style="margin-top: 15px;"><strong>Example 3: Financial Institution</strong></p>
+                <ul style="margin-left: 20px; margin-top: 10px;">
+                    <li><strong>✓ Compliant:</strong> Collecting health information for insurance purposes with explicit consent</li>
+                    <li><strong>✓ Compliant:</strong> Processing criminal record data for AML compliance (legal obligation)</li>
+                    <li><strong>✗ Non-compliant:</strong> Requesting religious information for profiling purposes</li>
+                </ul>
+            </div>
+            
+            <div class="important">
+                <strong>Key Takeaway for Biometric Data (2024):</strong> The addition of biometric data to the sensitive data category means organizations using fingerprint scanners, facial recognition, or other biometric systems must now obtain explicit consent and provide heightened protection. This has significant implications for access control systems, time attendance systems, and identity verification processes.
+            </div>
+            
+            <h3>6.5 Security Requirements for Sensitive Data</h3>
+            
+            <div class="provision">
+                <div class="provision-title">Enhanced Security Measures</div>
+                <p>While Section 9 (Security Principle) applies to all personal data, sensitive personal data requires particularly robust security due to greater potential harm from breach:</p>
+                <ul style="margin-left: 20px; margin-top: 10px;">
+                    <li><strong>Stronger encryption:</strong> Both at rest and in transit</li>
+                    <li><strong>Stricter access controls:</strong> Limit to essential personnel only</li>
+                    <li><strong>Enhanced monitoring:</strong> Regular audits and logging of access</li>
+                    <li><strong>Pseudonymization/Anonymization:</strong> Where possible and appropriate</li>
+                    <li><strong>Regular security assessments:</strong> More frequent testing and updates</li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- SECTION 7: ENFORCEMENT & PENALTIES -->
+        <div class="section" id="enforcement">
+            <h2>7. Enforcement & Penalties</h2>
+            
+            <p style="margin-bottom: 30px;">The PDPA establishes a comprehensive enforcement framework with criminal penalties, administrative fines, and regulatory powers.</p>
+            
+            <h3>7.1 The Personal Data Protection Commissioner</h3>
+            
+            <div class="provision">
+                <div class="provision-title">Regulatory Authority <span class="section-ref">(Part V - Sections 41-44)</span></div>
+                <p><strong>Role:</strong> The Personal Data Protection Commissioner is appointed to administer and enforce the PDPA.</p>
+                
+                <p style="margin-top: 15px;"><strong>Key Powers:</strong></p>
+                <ul style="margin-left: 20px; margin-top: 10px;">
+                    <li>Investigate complaints and suspected violations</li>
+                    <li>Conduct inspections and audits</li>
+                    <li>Require production of documents and information</li>
+                    <li>Issue enforcement notices</li>
+                    <li>Impose administrative fines</li>
+                    <li>Refer criminal matters for prosecution</li>
+                    <li>Approve codes of practice</li>
+                    <li>Issue guidelines and best practice recommendations</li>
+                </ul>
+            </div>
+            
+            <h3>7.2 Criminal Penalties <span class="section-ref">(Various sections)</span></h3>
+            
+            <div class="provision modified">
+                <div class="provision-title">Principle Violations <span class="badge badge-modified">Penalties Increased 2024</span></div>
+                <p><strong>Section 5 - Failure to comply with Data Protection Principles:</strong></p>
+                <table style="margin-top: 15px;">
+                    <thead>
+                        <tr>
+                            <th>Period</th>
+                            <th>Maximum Fine</th>
+                            <th>Maximum Imprisonment</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><strong>Before 2024</strong></td>
+                            <td>RM 300,000</td>
+                            <td>2 years</td>
+                        </tr>
+                        <tr style="background-color: #fff3cd;">
+                            <td><strong>After 2024 Amendment</strong></td>
+                            <td><strong>RM 1,000,000</strong></td>
+                            <td><strong>3 years</strong></td>
+                        </tr>
+                    </tbody>
+                </table>
+                <p style="margin-top: 10px;"><em>Note: This represents a 233% increase in financial penalty and 50% increase in imprisonment term.</em></p>
+            </div>
+            
+            <table>
+                <thead>
+                    <tr>
+                        <th>Offence</th>
+                        <th>Maximum Fine</th>
+                        <th>Maximum Imprisonment</th>
+                        <th>Section</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Violation of Data Protection Principles</td>
+                        <td>RM 1,000,000 (2024)</td>
+                        <td>3 years (2024)</td>
+                        <td>Section 5</td>
+                    </tr>
+                    <tr>
+                        <td>Operating without registration (if required)</td>
+                        <td>RM 100,000</td>
+                        <td>-</td>
+                        <td>Section 14</td>
+                    </tr>
+                    <tr>
+                        <td>Disclosure of personal data without consent</td>
+                        <td>RM 300,000</td>
+                        <td>2 years</td>
+                        <td>Section 8, 39</td>
+                    </tr>
+                    <tr>
+                        <td>Processing sensitive data without authorization</td>
+                        <td>RM 1,000,000</td>
+                        <td>3 years</td>
+                        <td>Section 40</td>
+                    </tr>
+                    <tr>
+                        <td>Obstruction of Commissioner's investigation</td>
+                        <td>RM 50,000</td>
+                        <td>1 year</td>
+                        <td>Part VI</td>
+                    </tr>
+                    <tr>
+                        <td>False/misleading information to Commissioner</td>
+                        <td>RM 100,000</td>
+                        <td>2 years</td>
+                        <td>Part VI</td>
+                    </tr>
+                </tbody>
+            </table>
+            
+            <h3>7.3 Administrative Penalties</h3>
+            
+            <div class="provision">
+                <div class="provision-title">Administrative Fines</div>
+                <p>In addition to criminal penalties, the Commissioner may impose administrative fines:</p>
+                <ul style="margin-left: 20px; margin-top: 10px;">
+                    <li><strong>Maximum:</strong> RM 500,000 per violation</li>
+                    <li><strong>Purpose:</strong> For less serious violations or regulatory non-compliance</li>
+                    <li><strong>Process:</strong> Administrative determination without criminal proceedings</li>
+                    <li><strong>Appeal:</strong> Subject to appeal to the Appeal Tribunal</li>
+                </ul>
+            </div>
+            
+            <h3>7.4 Enforcement Powers</h3>
+            
+            <div class="provision">
+                <div class="provision-title">Commissioner's Enforcement Tools <span class="section-ref">(Part VI)</span></div>
+                
+                <p><strong>Investigation Powers:</strong></p>
+                <ol style="margin-left: 20px; margin-top: 10px;">
+                    <li><strong>Inspection:</strong> Enter and inspect premises (with warrant if necessary)</li>
+                    <li><strong>Document Production:</strong> Require production of documents, records, and data</li>
+                    <li><strong>Information Requests:</strong> Compel provision of information and explanations</li>
+                    <li><strong>Search and Seizure:</strong> Seize evidence of violations</li>
+                    <li><strong>Interviews:</strong> Examine persons under investigation</li>
+                </ol>
+                
+                <p style="margin-top: 15px;"><strong>Enforcement Actions:</strong></p>
+                <ol style="margin-left: 20px; margin-top: 10px;">
+                    <li><strong>Enforcement Notice:</strong> Direct data controller to take or cease action</li>
+                    <li><strong>Administrative Fine:</strong> Impose monetary penalty up to RM 500,000</li>
+                    <li><strong>Criminal Referral:</strong> Refer matter to police for criminal investigation</li>
+                    <li><strong>Public Statement:</strong> Issue public statements about violations</li>
+                    <li><strong>Registration Revocation:</strong> Cancel registration certificate</li>
+                </ol>
+            </div>
+            
+            <h3>7.5 Complaint Process</h3>
+            
+            <div class="provision">
+                <div class="provision-title">How to File a Complaint</div>
+                <p><strong>Data subjects or others may lodge complaints about PDPA violations:</strong></p>
+                <ol style="margin-left: 20px; margin-top: 10px;">
+                    <li><strong>Submit complaint:</strong> To the Personal Data Protection Department</li>
+                    <li><strong>Provide details:</strong> Nature of violation, parties involved, evidence</li>
+                    <li><strong>Commissioner reviews:</strong> Determines if investigation warranted</li>
+                    <li><strong>Investigation:</strong> Commissioner may investigate and gather evidence</li>
+                    <li><strong>Resolution:</strong> Enforcement action, mediation, or dismissal</li>
+                    <li><strong>Appeal:</strong> Decisions may be appealed to the Appeal Tribunal</li>
+                </ol>
+            </div>
+            
+            <h3>7.6 Appeal Mechanism</h3>
+            
+            <div class="provision">
+                <div class="provision-title">Personal Data Protection Appeal Tribunal</div>
+                <p>The Act establishes an Appeal Tribunal to hear appeals against:</p>
+                <ul style="margin-left: 20px; margin-top: 10px;">
+                    <li>Commissioner's decisions on complaints</li>
+                    <li>Administrative fines imposed</li>
+                    <li>Enforcement notices issued</li>
+                    <li>Registration refusals or cancellations</li>
+                </ul>
+                <p style="margin-top: 10px;"><strong>Further Appeal:</strong> Tribunal decisions may be appealed to the High Court on questions of law.</p>
+            </div>
+            
+            <div class="example">
+                <div class="example-title">💡 Practical Example - Enforcement:</div>
+                <p><strong>Scenario: Data Breach at Retail Company</strong></p>
+                <ol style="margin-left: 20px; margin-top: 10px;">
+                    <li><strong>Incident:</strong> Retail company suffers data breach affecting 50,000 customers</li>
+                    <li><strong>Investigation:</strong> Commissioner initiates investigation</li>
+                    <li><strong>Findings:</strong> Company failed to implement adequate security measures (Section 9 violation)</li>
+                    <li><strong>Enforcement:</strong>
+                        <ul style="margin-left: 20px; margin-top: 5px;">
+                            <li>Criminal prosecution: Potential fine up to RM 1,000,000 or 3 years imprisonment</li>
+                            <li>Administrative fine: RM 300,000 imposed</li>
+                            <li>Enforcement notice: Directed to implement specific security measures</li>
+                            <li>Public statement: Commissioner issues public notice of violation</li>
+                        </ul>
+                    </li>
+                    <li><strong>Outcome:</strong> Company complies, implements measures, pays fines</li>
+                </ol>
+            </div>
+            
+            <div class="important">
+                <strong>Recent Trend:</strong> The 2024 Amendment's significant increase in penalties (from RM 300,000 to RM 1,000,000) signals a more aggressive enforcement posture. Organizations should prioritize compliance to avoid these substantial penalties.
+            </div>
+        </div>
+
+        <!-- SECTION 8: EXEMPTIONS -->
+        <div class="section" id="exemptions">
+            <h2>8. Exemptions</h2>
+            
+            <p style="margin-bottom: 30px;">The PDPA provides various exemptions from its requirements under specific circumstances.</p>
+            
+            <h3>8.1 Complete Exemptions - Non-Application <span class="section-ref">(Section 3)</span></h3>
+            
+            <div class="provision removed">
+                <div class="provision-title">Activities NOT Covered by PDPA</div>
+                <p>The Act does NOT apply to:</p>
+                
+                <ol style="margin-left: 20px; margin-top: 10px;">
+                    <li><strong>(a) Personal/Domestic Processing:</strong>
+                        <ul style="margin-left: 20px; margin-top: 5px;">
+                            <li>Processing by an individual only for personal, family, or household affairs</li>
+                            <li><em>Example: Personal address book, family photos</em></li>
+                        </ul>
+                    </li>
+                    
+                    <li><strong>(b) Credit Reporting:</strong>
+                        <ul style="margin-left: 20px; margin-top: 5px;">
+                            <li>Information processed for credit reporting business under Credit Reporting Agencies Act 2010</li>
+                            <li><em>Example: CTOS, CCRIS, credit bureaus</em></li>
+                        </ul>
+                    </li>
+                    
+                    <li><strong>(c) National Security & Law Enforcement:</strong>
+                        <p style="margin-top: 5px;">Processing necessary for:</p>
+                        <ul style="margin-left: 20px; margin-top: 5px;">
+                            <li>(i) Preventing or detecting crime</li>
+                            <li>(ii) Apprehending or prosecuting offenders</li>
+                            <li>(iii) National security</li>
+                            <li>(iv) Defense</li>
+                        </ul>
+                        <p style="margin-top: 5px;"><em>Example: Police investigations, military operations, intelligence activities</em></p>
+                    </li>
+                    
+                    <li><strong>(d) State Governments:</strong>
+                        <ul style="margin-left: 20px; margin-top: 5px;">
+                            <li>State Governments, State authorities, and State public authorities</li>
+                            <li><em>Note: Federal Government IS subject to PDPA (with limited exemptions)</em></li>
+                        </ul>
+                    </li>
+                </ol>
+            </div>
+            
+            <h3>8.2 Partial Exemptions <span class="section-ref">(Section 45)</span></h3>
+            
+            <div class="provision">
+                <div class="provision-title">Exemptions from Specific Principles</div>
+                <p>The Minister may prescribe exemptions from specific provisions for:</p>
+                
+                <ul style="margin-left: 20px; margin-top: 10px;">
+                    <li><strong>Categories of data controllers or processors</strong></li>
+                    <li><strong>Types of personal data</strong></li>
+                    <li><strong>Specific processing purposes</strong></li>
+                </ul>
+                
+                <p style="margin-top: 15px;"><strong>Common Partial Exemptions:</strong></p>
+                
+                <table style="margin-top: 15px;">
+                    <thead>
+                        <tr>
+                            <th>Purpose</th>
+                            <th>Exempted Principles</th>
+                            <th>Conditions</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Statistical/Research</td>
+                            <td>General, Notice, Disclosure, Access</td>
+                            <td>Data not processed for other purposes; results don't identify individuals</td>
+                        </tr>
+                        <tr>
+                            <td>News/Journalism</td>
+                            <td>Various (as prescribed)</td>
+                            <td>Processing solely for journalistic purposes; public interest</td>
+                        </tr>
+                        <tr>
+                            <td>Legal Proceedings</td>
+                            <td>Disclosure Principle</td>
+                            <td>Disclosure necessary for court proceedings or legal advice</td>
+                        </tr>
+                        <tr>
+                            <td>Emergency Situations</td>
+                            <td>General, Notice, Disclosure</td>
+                            <td>Necessary to protect vital interests; prevent serious harm</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            
+            <h3>8.3 Specific Exemption Scenarios</h3>
+            
+            <div class="provision">
+                <div class="provision-title">Journalism & Media</div>
+                <p><strong>Purpose:</strong> Balance data protection with freedom of expression and public interest in journalism.</p>
+                <ul style="margin-left: 20px; margin-top: 10px;">
+                    <li><strong>Exemption:</strong> Processing solely for journalistic, literary, or artistic purposes</li>
+                    <li><strong>Condition:</strong> Processing must be in the public interest</li>
+                    <li><strong>Limitation:</strong> Exemption does not extend to commercial use of personal data</li>
+                </ul>
+            </div>
+            
+            <div class="provision">
+                <div class="provision-title">Statistical Research</div>
+                <p><strong>Purpose:</strong> Enable legitimate research while protecting individual privacy.</p>
+                <ul style="margin-left: 20px; margin-top: 10px;">
+                    <li><strong>Exemption:</strong> From General, Notice, Disclosure, and Access Principles</li>
+                    <li><strong>Conditions:</strong>
+                        <ul style="margin-left: 20px; margin-top: 5px;">
+                            <li>Data processed only for statistical or research purposes</li>
+                            <li>Data not processed for any other purpose</li>
+                            <li>Results published in form that doesn't identify individuals</li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+            
+            <div class="provision">
+                <div class="provision-title">Legal Proceedings</div>
+                <p><strong>Purpose:</strong> Facilitate administration of justice and legal rights.</p>
+                <ul style="margin-left: 20px; margin-top: 10px;">
+                    <li><strong>Exemption:</strong> From disclosure restrictions</li>
+                    <li><strong>Applies to:</strong>
+                        <ul style="margin-left: 20px; margin-top: 5px;">
+                            <li>Court proceedings and tribunal hearings</li>
+                            <li>Legal advice from lawyers</li>
+                            <li>Exercise/defense of legal rights</li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+            
+            <h3>8.4 Exemptions vs. Exceptions</h3>
+            
+            <div class="provision">
+                <div class="provision-title">Understanding the Distinction</div>
+                
+                <p><strong>Exemptions (Sections 3, 45):</strong></p>
+                <ul style="margin-left: 20px; margin-top: 10px;">
+                    <li>PDPA does not apply at all, OR</li>
+                    <li>Specific principles don't apply</li>
+                    <li>Typically for categories of processing or processors</li>
+                </ul>
+                
+                <p style="margin-top: 15px;"><strong>Exceptions (within principles):</strong></p>
+                <ul style="margin-left: 20px; margin-top: 10px;">
+                    <li>PDPA applies but specific requirement is waived in certain circumstances</li>
+                    <li>Example: Consent not required when processing necessary for contract performance (Section 6(2))</li>
+                    <li>Example: Disclosure permitted without consent in certain circumstances (Section 39)</li>
+                </ul>
+            </div>
+            
+            <table>
+                <thead>
+                    <tr>
+                        <th>Category</th>
+                        <th>Type</th>
+                        <th>Scope</th>
+                        <th>Example</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>State Governments</td>
+                        <td>Complete Exemption</td>
+                        <td>PDPA doesn't apply</td>
+                        <td>State land office processing land titles</td>
+                    </tr>
+                    <tr>
+                        <td>Police Investigation</td>
+                        <td>Complete Exemption</td>
+                        <td>PDPA doesn't apply</td>
+                        <td>Criminal investigation data</td>
+                    </tr>
+                    <tr>
+                        <td>Research</td>
+                        <td>Partial Exemption</td>
+                        <td>Some principles don't apply</td>
+                        <td>University conducting anonymized research</td>
+                    </tr>
+                    <tr>
+                        <td>Contract Processing</td>
+                        <td>Exception</td>
+                        <td>PDPA applies; consent not needed</td>
+                        <td>Processing payment for order</td>
+                    </tr>
+                    <tr>
+                        <td>Legal Disclosure</td>
+                        <td>Exception</td>
+                        <td>PDPA applies; disclosure permitted</td>
+                        <td>Responding to court subpoena</td>
+                    </tr>
+                </tbody>
+            </table>
+            
+            <div class="example">
+                <div class="example-title">💡 Practical Examples - Exemptions:</div>
+                
+                <p><strong>Example 1: News Media</strong></p>
+                <ul style="margin-left: 20px; margin-top: 10px;">
+                    <li><strong>Scenario:</strong> Newspaper publishes article about public figure</li>
+                    <li><strong>Analysis:</strong> May be exempt from PDPA if processing solely for journalistic purposes and in public interest</li>
+                    <li><strong>Limitation:</strong> Exemption doesn't cover selling subscriber data to advertisers (commercial purpose)</li>
+                </ul>
+                
+                <p style="margin-top: 15px;"><strong>Example 2: Academic Research</strong></p>
+                <ul style="margin-left: 20px; margin-top: 10px;">
+                    <li><strong>Scenario:</strong> University conducts health research using patient data</li>
+                    <li><strong>Analysis:</strong> May be exempt from certain principles if data anonymized and used only for research</li>
+                    <li><strong>Requirement:</strong> Published results must not identify individual data subjects</li>
+                </ul>
+                
+                <p style="margin-top: 15px;"><strong>Example 3: Federal vs. State Government</strong></p>
+                <ul style="margin-left: 20px; margin-top: 10px;">
+                    <li><strong>Federal Agency:</strong> Subject to PDPA (e.g., federal hospital must comply)</li>
+                    <li><strong>State Agency:</strong> NOT subject to PDPA (e.g., state hospital exempt)</li>
+                    <li><strong>Impact:</strong> Creates different privacy standards for federal vs. state entities</li>
+                </ul>
+            </div>
+            
+            <div class="important">
+                <strong>Ambiguity Note:</strong> The exemption for State Governments but not Federal Government creates complexity. Private sector organizations contracted by state governments should seek legal clarification on whether the exemption extends to them.
+            </div>
+            
+            <h3>8.5 Ministerial Power to Prescribe Exemptions</h3>
+            
+            <div class="provision">
+                <div class="provision-title">Future Exemptions</div>
+                <p>Section 45 grants the Minister broad power to prescribe additional exemptions:</p>
+                <ul style="margin-left: 20px; margin-top: 10px;">
+                    <li>May exempt specific categories of data controllers or processors</li>
+                    <li>May exempt specific types of personal data or processing</li>
+                    <li>Exemptions may be conditional or unconditional</li>
+                    <li>Organizations should monitor official gazettes for new exemptions</li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- GLOSSARY -->
+        <div class="glossary" id="glossary">
+            <h2>📖 Glossary - Legal Terms in Plain Language</h2>
+            
+            <p style="margin-bottom: 20px;">This glossary translates legal and technical terms from the PDPA into everyday language to help non-legal professionals understand the Act.</p>
+            
+            <div class="glossary-term">
+                <dt>Personal Data</dt>
+                <dd><strong>Legal definition:</strong> Information that relates directly or indirectly to a data subject who is identified or identifiable from that information or from that and other information in the possession of a data user.
+                <br><br><strong>Plain language:</strong> Any information about a person that can be used to identify them, either on its own or combined with other information. Examples: name, IC number, phone number, email address, IP address, photo, fingerprint.</dd>
+            </div>
+            
+            <div class="glossary-term">
+                <dt>Data Controller (formerly Data User)</dt>
+                <dd><strong>Legal definition:</strong> A person who either alone or jointly with other persons processes personal data or has control over or authorizes the processing of any personal data.
+                <br><br><strong>Plain language:</strong> The organization or person who decides how and why personal data is collected and used. They're in charge of the data. Example: A company that collects customer information for its business.</dd>
+            </div>
+            
+            <div class="glossary-term">
+                <dt>Data Processor</dt>
+                <dd><strong>Legal definition:</strong> Any person, other than an employee of the data user, who processes the personal data solely on behalf of the data user.
+                <br><br><strong>Plain language:</strong> A third-party company or service that processes data on behalf of the data controller, but doesn't make decisions about how to use it. Example: A cloud storage provider, payroll service bureau, or IT vendor.</dd>
+            </div>
+            
+            <div class="glossary-term">
+                <dt>Data Subject</dt>
+                <dd><strong>Legal definition:</strong> The individual who is the subject of the personal data.
+                <br><br><strong>Plain language:</strong> The person whose information is being collected or used. You, me, customers, employees - anyone whose data is being processed. Note: Does not include deceased individuals (as of 2024 Amendment).</dd>
+            </div>
+            
+            <div class="glossary-term">
+                <dt>Processing</dt>
+                <dd><strong>Legal definition:</strong> Collecting, recording, holding, storing, organizing, adapting, altering, retrieving, consulting, using, disclosing, disseminating, aligning, combining, correcting, erasing or destroying data.
+                <br><br><strong>Plain language:</strong> Basically anything you do with personal data - from collecting it, to storing it, using it, sharing it, or deleting it. Almost any handling of personal data is "processing".</dd>
+            </div>
+            
+            <div class="glossary-term">
+                <dt>Sensitive Personal Data</dt>
+                <dd><strong>Legal definition:</strong> Personal data consisting of information as to physical or mental health, political opinions, religious beliefs, commission of offences, or biometric data (added 2024).
+                <br><br><strong>Plain language:</strong> Extra-private information that could cause serious harm if misused, like health records, religious beliefs, political views, criminal history, or biometric data (fingerprints, facial recognition). This data gets special protection.</dd>
+            </div>
+            
+            <div class="glossary-term">
+                <dt>Biometric Data (New 2024)</dt>
+                <dd><strong>Legal definition:</strong> Any personal data resulting from technical processing relating to the physical, physiological or behavioural characteristics of a person.
+                <br><br><strong>Plain language:</strong> Data from physical characteristics used to identify someone, like fingerprints, facial features, iris patterns, voice prints, or DNA. This is now classified as sensitive personal data.</dd>
+            </div>
+            
+            <div class="glossary-term">
+                <dt>Consent</dt>
+                <dd><strong>Legal definition:</strong> Any freely given specific and informed indication of wishes by which the data subject signifies his agreement to the processing of personal data relating to him.
+                <br><br><strong>Plain language:</strong> Permission that is freely given, specific to a purpose, and based on clear information. Can't be forced or hidden in fine print. Must be genuine agreement.</dd>
+            </div>
+            
+            <div class="glossary-term">
+                <dt>Explicit Consent</dt>
+                <dd><strong>Legal definition:</strong> Not explicitly defined but required for sensitive personal data.
+                <br><br><strong>Plain language:</strong> Super-clear permission, usually requiring active opt-in (like checking a box) rather than passive agreement. Must be specific, unambiguous, and separately obtained for sensitive data. No pre-checked boxes allowed.</dd>
+            </div>
+            
+            <div class="glossary-term">
+                <dt>Personal Data Breach (New 2024)</dt>
+                <dd><strong>Legal definition:</strong> Any breach of personal data, loss of personal data, misuse of personal data or unauthorized access of personal data.
+                <br><br><strong>Plain language:</strong> When something goes wrong with personal data - it's hacked, leaked, stolen, lost, or accessed by someone who shouldn't have it. Example: A laptop with customer data is stolen, or a database is hacked.</dd>
+            </div>
+            
+            <div class="glossary-term">
+                <dt>Data Portability (New 2024)</dt>
+                <dd><strong>Legal definition:</strong> The right to receive personal data in a structured, commonly used format and to transmit to another data controller.
+                <br><br><strong>Plain language:</strong> Your right to get your data from one company and move it to another company, like downloading your data from one bank and uploading to another. Think of it like changing phone numbers and taking your contacts with you.</dd>
+            </div>
+            
+            <div class="glossary-term">
+                <dt>Commercial Transaction</dt>
+                <dd><strong>Legal definition:</strong> Not explicitly defined in the Act.
+                <br><br><strong>Plain language:</strong> Business activities - buying, selling, trading, providing services for money or value. The Act mainly applies to businesses, not personal activities. <em>(Note: Ambiguous area - seek legal advice for borderline cases)</em></dd>
+            </div>
+            
+            <div class="glossary-term">
+                <dt>Third Party</dt>
+                <dd><strong>Legal definition:</strong> Any person other than the data subject, the data user or data processor, or any person authorized by the data user or data processor to process data.
+                <br><br><strong>Plain language:</strong> Someone outside your organization who you might share data with - like partners, vendors, service providers, or government agencies. Not your employees or contractors who work for you.</dd>
+            </div>
+            
+            <div class="glossary-term">
+                <dt>Class of Third Parties</dt>
+                <dd><strong>Legal definition:</strong> Categories or groups of third parties to whom data may be disclosed.
+                <br><br><strong>Plain language:</strong> Types of organizations you might share data with, not necessarily naming specific companies. Example: "payment processors," "delivery companies," "marketing agencies" rather than "ABC Payment Sdn Bhd."</dd>
+            </div>
+            
+            <div class="glossary-term">
+                <dt>Adequate Protection</dt>
+                <dd><strong>Legal definition:</strong> A level of protection comparable to that provided under the PDPA.
+                <br><br><strong>Plain language:</strong> When transferring data to another country, that country must have data protection laws and practices as good as Malaysia's. Think of it as "our rules or equally good rules."</dd>
+            </div>
+            
+            <div class="glossary-term">
+                <dt>Enforcement Notice</dt>
+                <dd><strong>Legal definition:</strong> A notice issued by the Commissioner directing a data user to take or cease certain actions.
+                <br><br><strong>Plain language:</strong> An official order from the regulator telling you to do something or stop doing something. Like a "cease and desist" or "fix this problem" order. Ignoring it can lead to penalties.</dd>
+            </div>
+            
+            <div class="glossary-term">
+                <dt>Data Access Request</dt>
+                <dd><strong>Legal definition:</strong> A request by a data subject to a data controller for access to personal data.
+                <br><br><strong>Plain language:</strong> When you ask a company "What information do you have about me?" They must respond and show you what they've got (with some exceptions).</dd>
+            </div>
+            
+            <div class="glossary-term">
+                <dt>Data Correction Request</dt>
+                <dd><strong>Legal definition:</strong> A request by a data subject to correct personal data that is inaccurate, incomplete, misleading or not up-to-date.
+                <br><br><strong>Plain language:</strong> Asking a company to fix wrong information they have about you. Like updating your address, correcting a misspelled name, or fixing an error in your account.</dd>
+            </div>
+            
+            <div class="glossary-term">
+                <dt>Code of Practice</dt>
+                <dd><strong>Legal definition:</strong> A code prepared by a Data User Forum and approved by the Commissioner for a particular sector.
+                <br><br><strong>Plain language:</strong> Industry-specific rules developed by businesses in that sector (like banking or healthcare) and approved by the regulator. Like a "how to comply with PDPA in our industry" guide.</dd>
+            </div>
+            
+            <div class="glossary-term">
+                <dt>Pseudonymization</dt>
+                <dd><strong>Legal definition:</strong> Not explicitly defined in PDPA.
+                <br><br><strong>Plain language:</strong> Replacing identifying information with fake names or codes, so you can't easily tell who the data is about without additional information kept separately. Like using "Customer #12345" instead of "Ahmad bin Ali."</dd>
+            </div>
+            
+            <div class="glossary-term">
+                <dt>Anonymization</dt>
+                <dd><strong>Legal definition:</strong> Not explicitly defined in PDPA.
+                <br><br><strong>Plain language:</strong> Removing all identifying information so it's impossible (or extremely difficult) to figure out who the data is about. Once truly anonymized, data is no longer "personal data" under PDPA.</dd>
+            </div>
+        </div>
+
+        <!-- CONCLUSION AND NOTES -->
+        <div class="section">
+            <h2>⚖️ Important Legal Notes</h2>
+            
+            <div class="legal-note">
+                <h3>Disclaimer</h3>
+                <p><strong>This document is for informational purposes only and does NOT constitute legal advice.</strong></p>
+                <ul style="margin-left: 20px; margin-top: 10px;">
+                    <li>The analysis is based on the Personal Data Protection Act 2010 (Act 709) and the Personal Data Protection (Amendment) Act 2024 (Act A1727)</li>
+                    <li>Regulations, guidelines, and judicial interpretations may provide additional clarification and requirements not covered in this summary</li>
+                    <li>PDPA requirements should be read in conjunction with other applicable laws and regulations</li>
+                    <li>For specific legal guidance, organizations should consult with qualified legal professionals specializing in Malaysian data protection law</li>
+                </ul>
+            </div>
+            
+            <div class="important">
+                <h3>Areas Requiring Further Legal Consultation</h3>
+                <p>The following areas may require professional legal advice:</p>
+                <ul style="margin-left: 20px; margin-top: 10px;">
+                    <li><strong>Definition of "commercial transaction":</strong> Not explicitly defined; may require case-by-case analysis</li>
+                    <li><strong>Cross-border adequacy determinations:</strong> No official whitelist published; requires assessment</li>
+                    <li><strong>State government exemption scope:</strong> Unclear whether exemption extends to contractors</li>
+                    <li><strong>Data portability implementation:</strong> New right; detailed regulations may follow</li>
+                    <li><strong>Biometric data in employment:</strong> How 2024 amendment affects existing practices</li>
+                    <li><strong>Interaction with sector-specific laws:</strong> E.g., banking secrecy, health records laws</li>
+                </ul>
+            </div>
+            
+            <div class="provision">
+                <h3>Key Implementation Dates to Monitor</h3>
+                <p>The 2024 Amendment Act allows for staggered implementation:</p>
+                <ul style="margin-left: 20px; margin-top: 10px;">
+                    <li><strong>Royal Assent:</strong> October 9, 2024</li>
+                    <li><strong>Gazette Publication:</strong> October 17, 2024</li>
+                    <li><strong>Commencement:</strong> To be appointed by Minister - may be different dates for different provisions</li>
+                    <li><strong>Action Required:</strong> Monitor official gazettes for implementation notices</li>
+                </ul>
+            </div>
+            
+            <h3>Recommended Next Steps for Organizations</h3>
+            
+            <ol style="margin-left: 20px; margin-top: 10px;">
+                <li><strong>Conduct Data Protection Impact Assessment (DPIA):</strong> Identify all personal data processing activities</li>
+                <li><strong>Review and update privacy notices:</strong> Ensure compliance with Notice and Choice Principle</li>
+                <li><strong>Assess biometric data usage:</strong> If using biometric systems, ensure explicit consent and heightened security</li>
+                <li><strong>Implement data portability mechanisms:</strong> Prepare systems to export data in portable formats</li>
+                <li><strong>Review cross-border transfers:</strong> Ensure adequate protection or contractual safeguards</li>
+                <li><strong>Enhance security measures:</strong> Given increased penalties, prioritize robust security</li>
+                <li><strong>Update data processor agreements:</strong> Ensure processors comply with Security Principle</li>
+                <li><strong>Train staff:</strong> Educate employees on PDPA requirements and 2024 changes</li>
+                <li><strong>Establish incident response plan:</strong> Prepare for potential data breaches</li>
+                <li><strong>Seek legal review:</strong> Have qualified counsel review compliance program</li>
+            </ol>
+        </div>
+        
+        <!-- FOOTER -->
+        <div class="section" style="background: linear-gradient(135deg, var(--primary-color), var(--secondary-color)); color: white; text-align: center;">
+            <h2>Document Information</h2>
+            <p><strong>Source Documents:</strong></p>
+            <ul style="list-style: none; padding: 0;">
+                <li>Personal Data Protection Act 2010 (Act 709)</li>
+                <li>Personal Data Protection (Amendment) Act 2024 (Act A1727)</li>
+            </ul>
+            
+            <p style="margin-top: 20px;"><strong>Analysis Date:</strong> November 2024</p>
+            <p><strong>Color Legend:</strong></p>
+            <div style="display: flex; justify-content: center; gap: 20px; flex-wrap: wrap; margin-top: 10px;">
+                <span class="badge badge-new">New 2024</span>
+                <span class="badge badge-modified">Modified 2024</span>
+                <span class="badge badge-removed">Removed/Replaced</span>
+            </div>
+            
+            <p style="margin-top: 30px; font-size: 0.9em; opacity: 0.9;">
+                This document was generated through comprehensive analysis of the PDPA Act 2022 and Amendment 2024.<br>
+                For official legal text, refer to the gazetted Acts.<br>
+                For compliance guidance, consult the Personal Data Protection Department or qualified legal counsel.
+            </p>
+            
+            <p style="margin-top: 20px; font-size: 0.85em; opacity: 0.8;">
+                © 2024 - Personal Data Protection Analysis<br>
+                This document may be shared and distributed for educational and compliance purposes.
+            </p>
+        </div>
+    </div>
+    
+    <!-- JavaScript for smooth scrolling -->
+    <script>
+        // Smooth scrolling for navigation links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                }
+            });
+        });
+        
+        // Add print functionality
+        function printDocument() {
+            window.print();
+        }
+        
+        // Highlight current section in navigation
+        window.addEventListener('scroll', function() {
+            const sections = document.querySelectorAll('.section[id]');
+            const navLinks = document.querySelectorAll('nav a');
+            
+            let current = '';
+            sections.forEach(section => {
+                const sectionTop = section.offsetTop;
+                const sectionHeight = section.clientHeight;
+                if (pageYOffset >= sectionTop - 200) {
+                    current = section.getAttribute('id');
+                }
+            });
+            
+            navLinks.forEach(link => {
+                link.style.backgroundColor = '';
+                if (link.getAttribute('href') === '#' + current) {
+                    link.style.backgroundColor = 'var(--primary-color)';
+                }
+            });
+        });
+    </script>
+</body>
+</html>
